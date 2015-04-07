@@ -5,7 +5,7 @@ module.exports = {
     get: function(req, res){
         models.get(function(err, results){
             if(err){ 
-                throw err;
+                throw err; 
             } else {
                 res.status(200).send(results);  
             }
