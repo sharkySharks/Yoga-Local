@@ -12,6 +12,10 @@
 }
 .classes {
   font-weight:bold;
+  background-color: #eee;
+  height:24px;
+  vertical-align: middle;
+  padding-top: 4px;
 }
 .heading {
   width: 100%;
