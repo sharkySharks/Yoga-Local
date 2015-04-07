@@ -4,7 +4,9 @@ var bluebird = require('bluebird');
 module.exports = {
     classes: {
         get: function(req, res){
-            models.classes.get(function(results){
+            console.log("data: ", req.query.time)
+            var params = req.query.time;
+            models.classes.get(params, function(results){
                 if(!results){ 
                     throw err; 
                 } else {

@@ -807,3 +807,31 @@ VALUES
   , 60
   , 2
 );
+
+Select c.NAME AS Name
+, c.DESCRIPTION AS Description
+, c.CLASS_DATE AS 'Class Date'
+, c.START_TIME+'-'c.END_TIME AS Time
+, s.NAME AS Studio
+, s.ADDRESS AS ADDRESS
+, s.AREA_OF_TOWN AS 'Area of Town'
+FROM classes c, studios s 
+WHERE 
+c.STUDIO_ID = s.ID
+AND c.START_TIME >= ?;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
