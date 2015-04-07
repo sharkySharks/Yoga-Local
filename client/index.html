@@ -71,7 +71,7 @@
       app.clearMessages();
 
       for(var i = 0; i < data.length; i++){
-        var yogaClass="<div class='classes'>"+data[i].Name+"&nbsp;&nbsp;&nbsp;&nbsp; Time: &nbsp;&nbsp;"+data[i].Time.slice(0,5)+"&nbsp;&nbsp;&nbsp;&nbsp; Date: &nbsp;&nbsp;"+data[i].ClassDate.slice(0,10)+"&nbsp;&nbsp;&nbsp;&nbsp; Studio:&nbsp;&nbsp;"+data[i].Studio+"&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;"+data[i].ADDRESS+"</div></div><br><div class=''>"+data[i].Description+"</div><br><br>"
+        var yogaClass="<div class='classes'>"+data[i].Name+"&nbsp;&nbsp;&nbsp;&nbsp; Time: &nbsp;&nbsp;"+data[i].Time.slice(0,5)+"&nbsp;&nbsp;&nbsp;&nbsp; Date: &nbsp;&nbsp;"+data[i].ClassDate.slice(0,10)+"&nbsp;&nbsp;&nbsp;&nbsp; Studio:&nbsp;&nbsp;"+data[i].Studio+"&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;"+data[i].ADDRESS+"&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;"+data[i].AreaofTown+"</div></div><br><div class=''>"+data[i].Description+"</div><br><br>"
         console.log(data[i]);
         $('#classes').append(yogaClass);
         
